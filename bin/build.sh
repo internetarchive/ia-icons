@@ -8,7 +8,7 @@ cat >| test/index.html << EOF
 <style>
   div {
     display: inline-block;
-    width: 75px;
+    width: 100px;
     padding: 5px;
     border: 1px solid gray;
     border-radius: 5px;
@@ -20,9 +20,9 @@ cat >| test/index.html << EOF
 EOF
 
 
-for SVG in icons/*.svg; do
+for SVG in svg/*.svg; do
   BASENAME=$(basename $SVG .svg)
-  OUT=src/icon-${BASENAME}.js
+  OUT=src/${BASENAME}.js
   echo "generating $SVG => $OUT"
 
   cat >| $OUT << EOF
@@ -42,13 +42,15 @@ export default IAIcon;
 EOF
 
 
+  # add the icon to the test page
   cat >> test/index.html << EOF
 
 <div>
-  ia-icon-$BASENAME<hr>
+  &lt;ia-icon-$BASENAME/&gt;
+  <hr>
   <ia-icon-$BASENAME></ia-icon-$BASENAME>
 </div>
-<script type="module" src="../src/icon-$BASENAME.js"></script>
+<script type="module" src="../src/$BASENAME.js"></script>
 
 
 EOF
