@@ -1,9 +1,12 @@
 #!/bin/zsh -e
 
+# (re)generates all `src/*.js` and `test/` files (from `svg/*.svg` source images).
+
 MYDIR=${0:a:h}
 
 cd $MYDIR/..
 
+# start of the main test/display page
 cat >| test/index.html << EOF
 <style>
   div {
@@ -25,6 +28,7 @@ for SVG in svg/*.svg; do
   OUT=src/${BASENAME}.js
   echo "generating $SVG => $OUT"
 
+  # create icon's `src/...js` JS file
   cat >| $OUT << EOF
 import IAIconBase from './base.js';
 
