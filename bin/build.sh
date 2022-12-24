@@ -17,6 +17,7 @@ cat >| test/index.html << EOF
     border-radius: 5px;
     vertical-align: top;
     margin: 10px 5px;
+    background-color: #e9e9e9;
   }
 </style>
 <body>
