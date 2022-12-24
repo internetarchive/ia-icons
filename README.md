@@ -18,7 +18,7 @@ You can use in markup with the lit / web components definition like:
 Each icon `.js` file defines an `<ia-icon>` `LitElement` web component.
 
 ## Demo Page
-**[test/](test/)
+**[test/](test/)**
 
 ## Updating
 
