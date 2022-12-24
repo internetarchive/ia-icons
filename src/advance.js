@@ -11,7 +11,7 @@ class IAIcon extends IAIconBase {
 >
   <title id="advanceTitleID">Advance icon</title>
   <desc id="advanceDescID">An arrow pointing in a forward direction</desc>
-  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+  <g stroke="none" stroke-width="1" fill-xxx="none" fill-rule="evenodd">
     <g transform="translate(-200.000000, -15.000000)">
       <g transform="translate(56.922243, 5.000000)">
         <g transform="translate(144.000000, 10.000000)">
