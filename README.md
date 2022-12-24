@@ -28,7 +28,8 @@ Please run:
 ```
 in a `git clone` of this repo to rebuild/update [src/](src/) and [test/](test/) files.
 
-You can add a new (or change an existing) `.svg` file in the [svg/](svg/) subdir,
-and running the [bin/build.sh](bin/build.sh) script
-will automatically create (or update) the relevant JS and test files.
+You can add a new (or change an existing) `.svg` file in the [svg/](svg/) subdir.
+
+Running the [bin/build.sh](bin/build.sh) script will automatically create (or update)
+the relevant JS and test files.
 
