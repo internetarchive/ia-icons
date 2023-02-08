@@ -12,7 +12,7 @@ module.exports = {
     'import/no-unresolved': [2, {
       ignore: [
         '^https://esm.archive.org/',
-        '^https://offshoot.ux.archive.org/lit',
+        '^https://offshoot.prod.archive.org/lit',
       ],
     }],
 
