@@ -1,5 +1,5 @@
-import { css, html, LitElement } from 'https://offshoot.prod.archive.org/lit.js';
-import { unsafeHTML } from 'https://offshoot.prod.archive.org/lit/directives/unsafe-html.js';
+import { css, html, LitElement } from 'https://esm.ext.archive.org/lit@^2.2.3';
+import { unsafeHTML } from 'https://esm.ext.archive.org/lit@^2.2.3/directives/unsafe-html.js';
 
 class IAIconBase extends LitElement {
   constructor(icon) {
